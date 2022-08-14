@@ -6,7 +6,7 @@ create table card(
     cardnumber varchar(20)
 );
 
-create table bankcard(
+create table bankcheck(
 	id int primary key,
     amount decimal(8.3),
     checknumber varchar(20)
