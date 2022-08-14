@@ -1,5 +1,6 @@
 use mydb;
 
+-- for SINGLE_TABLE inheritance type
 create table payment(
 	id int primary key,
     pmode varchar(2),
