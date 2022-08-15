@@ -74,6 +74,19 @@ class AssociationsApplicationTests {
 		repository.save(customer);
 	}
 	
-	
+	//Retreiving data from db
+	@Test
+	public void testReterieveAllData() {
+
+		// getting all data
+		Iterable<Customer> findAll = repository.findAll();
+		for (Customer c : findAll) {
+			System.out.println(c.getName());
+		}
+
+		// Getting one data
+		Optional<Customer> findById = repository.findById(5l);
+		System.out.println(findById.get().getName());
+	}
 
 }
