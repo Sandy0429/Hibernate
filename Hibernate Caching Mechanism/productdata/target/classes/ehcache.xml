@@ -1,0 +1,10 @@
+<ehcache>
+	<diskStore path="java.io.tmpdir"/>
+	
+	
+	<!-- eternal is false meaning cachable object should be destroyed after sometime otherwise it will ran out of memory -->
+	<!-- timeToTdleSeconds is if object is idle for 5 seconds then it will be destroyed -->
+	<!-- timeToLiveSeconds after 10 seconds object will be removed from the cache no matter what -->
+	<defaultCache maxElementsInMemory="100" eternal="false" timeToIdleSeconds="5" timeToLiveSeconds="10" overflowToDisk="true"/>
+
+</ehcache>
